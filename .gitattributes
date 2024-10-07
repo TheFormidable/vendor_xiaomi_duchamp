@@ -1,0 +1,2 @@
+proprietary/vendor/lib64/mt6897/libaibc_tuning.so filter=lfs diff=lfs merge=lfs -text
+radio/modem.img filter=lfs diff=lfs merge=lfs -text
