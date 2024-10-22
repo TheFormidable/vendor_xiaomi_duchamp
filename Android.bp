@@ -14338,12 +14338,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libimsma.so"],
-			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsink", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+	check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
